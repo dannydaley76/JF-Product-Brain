@@ -8,8 +8,8 @@ This directory contains the skill definitions used by the JustFix Product Brain.
 
 | Skill | What it does |
 |---|---|
-| `lean-prd/` | Writes a lean PRD from a problem statement — problem, solution, top-level user stories. Saves to Notion PRDs database. |
-| `user-stories-jira/` | Breaks a PRD (from Notion) into a storymap and creates **Linear** tickets under a parent issue. (Directory name kept for trigger-phrase compatibility — output is Linear, not Jira.) |
+| `lean-prd/` | Writes a lean PRD from a problem statement: problem, solution, top-level user stories. Saves to Notion PRDs database. |
+| `user-stories-jira/` | Breaks a PRD (from Notion) into a storymap and creates **Linear** tickets under a parent issue. (Directory name kept for trigger-phrase compatibility. Output is Linear, not Jira.) |
 | `ticket-refinement/` | Takes a draft **Linear** story and refines it to be dev-ready. Reads the parent PRD from Notion. |
 | `ux-copy/` | Writes and reviews UI copy for customers, fixers, and admin staff |
 
@@ -17,11 +17,25 @@ This directory contains the skill definitions used by the JustFix Product Brain.
 
 ## System of record (May 2026 onwards)
 
-- **PRDs** → Notion **Product Brain** workspace, "PRDs" database (data source `d8c21fd9-00ce-4aa3-a845-49dc36b2d9c5`)
-- **Tickets** → Linear, team **Just-fix** (ID `53e25529-6f66-44b7-80cf-6020401d5bf3`)
-- **Tech / engineering docs** → Notion **Product Brain** → Technical Docs / Engineering page trees
+- **PRDs**: Notion **Product Brain** workspace, "PRDs" database (data source `d8c21fd9-00ce-4aa3-a845-49dc36b2d9c5`)
+- **Tickets**: Linear, team **Just-fix** (ID `53e25529-6f66-44b7-80cf-6020401d5bf3`)
+- **Tech / engineering docs**: Notion **Product Brain**, Technical Docs and Engineering page trees
 
-Confluence and Jira are being retired. Skills should not write new content to either; only read for migration support.
+Confluence and Jira are being retired. Skills should not write new content to either, only read for migration support.
+
+---
+
+## Style rules (apply to all skills)
+
+When writing copy for the user (anything that ends up in Notion, Linear, or chat), follow these rules:
+
+- **No em-dashes (—).** Em-dashes are a strong tell-tale sign of LLM-written prose. Use commas, parentheses, colons, full stops, or rephrase. Replace "X — Y" with "X, Y", "X (Y)", "X: Y", or two sentences.
+- **En-dashes (–) are acceptable in numeric ranges** ("5–10 years", "9am–5pm"). Avoid them in prose.
+- **Avoid the words "genuinely", "honestly", "straightforward"**. They read as filler or hedging.
+- **Don't overuse bold or italics.** Bold a term once when first introduced as a defined concept, but not for emphasis on every other sentence.
+- **Write like a person**, not a documentation generator. Short sentences are fine. Conversational asides are fine. Read it aloud once to check.
+
+If the user provides input that contains em-dashes, preserve their wording when quoting them directly but don't introduce new ones in your own copy.
 
 ---
 
