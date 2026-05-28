@@ -8,10 +8,20 @@ This directory contains the skill definitions used by the JustFix Product Brain.
 
 | Skill | What it does |
 |---|---|
-| `lean-prd/` | Writes a lean PRD from a problem statement — problem, solution, top-level user stories |
-| `user-stories-jira/` | Breaks a PRD into a storymap and creates Jira tickets under an epic |
-| `ticket-refinement/` | Takes a draft Jira story and refines it to be dev-ready |
+| `lean-prd/` | Writes a lean PRD from a problem statement — problem, solution, top-level user stories. Saves to Notion PRDs database. |
+| `user-stories-jira/` | Breaks a PRD (from Notion) into a storymap and creates **Linear** tickets under a parent issue. (Directory name kept for trigger-phrase compatibility — output is Linear, not Jira.) |
+| `ticket-refinement/` | Takes a draft **Linear** story and refines it to be dev-ready. Reads the parent PRD from Notion. |
 | `ux-copy/` | Writes and reviews UI copy for customers, fixers, and admin staff |
+
+---
+
+## System of record (May 2026 onwards)
+
+- **PRDs** → Notion **Product Brain** workspace, "PRDs" database (data source `d8c21fd9-00ce-4aa3-a845-49dc36b2d9c5`)
+- **Tickets** → Linear, team **Just-fix** (ID `53e25529-6f66-44b7-80cf-6020401d5bf3`)
+- **Tech / engineering docs** → Notion **Product Brain** → Technical Docs / Engineering page trees
+
+Confluence and Jira are being retired. Skills should not write new content to either; only read for migration support.
 
 ---
 
