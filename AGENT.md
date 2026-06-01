@@ -37,8 +37,37 @@ Use these rules to decide which skill to invoke:
 | Approved PRD | Ready to break down | `skills/user-stories-jira` |
 | Draft Jira ticket | Needs refinement for dev | `skills/ticket-refinement` |
 | Any UI text, button labels, error states | Any surface | `skills/ux-copy` |
+| Backlog triage, sprint prep, stale tickets | Any | `skills/backlog-grooming` |
 
 When in doubt about which skill to use, ask the user before proceeding.
+
+---
+
+## Cowork session setup
+
+The product brain folder is at: `~/Documents/Claude/Projects/Product Brain`
+
+**To write files to this repo from a Cowork session:**
+1. In Cowork, select the folder `~/Documents/Claude/Projects/Product Brain` (or `~/Documents/Claude/Projects` — the parent is already connected)
+2. The agent can then write directly to any file in the repo using the Write/Edit tools
+3. After writing, Danny commits and pushes from terminal:
+   ```bash
+   cd ~/Documents/Claude/Projects/Product\ Brain
+   git add .
+   git commit -m "describe change"
+   git push
+   ```
+
+**Why not use the GitHub MCP?** A custom GitHub MCP server was set up previously but disconnected. Until it's re-established, the folder connection is the reliable path. The agent cannot push directly due to sandbox permission restrictions on the `.git` directory — Danny must push from terminal.
+
+**Connected tools in Cowork (as of June 2026):**
+- Linear (Just-fix team)
+- Notion (Product Brain, PRDs)
+- Slack
+- Google Calendar
+- Granola (meeting notes)
+- Mixpanel
+- Atlassian / Jira (legacy — being phased out)
 
 ---
 
