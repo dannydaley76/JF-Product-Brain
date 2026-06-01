@@ -168,6 +168,19 @@ These rules apply to the PRD body that gets saved to Notion AND to the chat copy
 
 ---
 
+### Step 5: Close the originating idea ticket
+
+If this PRD was triggered by a Linear idea ticket (Parking Lot or Discovery status), close it now that the PRD and project exist.
+
+Ask the user: "Is there a Linear idea ticket for this that we should close?" If yes, ask for the ticket ID (or look it up), then:
+
+1. Set its status to **Won't do** or **Cancelled** (whichever feels right — Won't do signals a deliberate decision, Cancelled signals it's superseded)
+2. Add a comment on the ticket: "Superseded by PRD: [Notion PRD URL] and Linear project: [project URL]"
+
+This keeps the idea ticket as a clean audit trail without leaving it open as a false backlog item.
+
+---
+
 ## Notes
 
 - Keep the PRD to a single page where possible.
@@ -175,3 +188,4 @@ These rules apply to the PRD body that gets saved to Notion AND to the chat copy
 - Avoid acceptance criteria at this stage. That detail belongs in the storymap and Linear tickets.
 - The `Linked Linear Epic` field is the canonical pointer to the engineering work. While JustFix is mid-migration from Jira, a Jira epic URL is acceptable as a temporary value. Flag to the user that it should be updated to a Linear URL once the epic is migrated.
 - If the user asks to break the PRD down into tickets next, hand off to the `user-stories-jira` skill. It can read this PRD back from Notion via `notion-fetch`.
+- Always close the originating idea ticket (Step 5) before finishing. An open idea ticket alongside a live project creates false backlog noise.
