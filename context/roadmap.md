@@ -1,6 +1,6 @@
 # Roadmap
 
-_Last updated: 2026-05-27_
+_Last updated: 2026-06-02_
 
 This document tracks current and near-term product priorities across all surfaces. It should be updated as priorities shift. It is a working document, not a polished plan.
 
@@ -13,6 +13,9 @@ Pushing AI-generated cost estimations on the web app as the primary conversion p
 
 ### Fixer WhatsApp Flows migration
 Moving fixer interactions (accept booking, attendance check, feedback/invoice submission) from SMS + simple web app to WhatsApp Flows. Goal: more reliable, app-like experience that reduces no-shows and friction.
+
+### ElevenLabs voice agent
+Exploring an AI voice agent (via ElevenLabs) to handle outbound fixer confirmation calls. Currently in early exploration — Paul leading platform assessment. Blocker: unable to extract yes/no responses from calls; conditional action logic not yet resolved.
 
 ---
 

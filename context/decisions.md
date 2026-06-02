@@ -19,4 +19,14 @@ This document exists to prevent good decisions from being relitigated and bad on
 
 ---
 
+### Atlassian → Linear + Notion (tooling migration)
+**Decision:** Switch from Atlassian (Jira/Confluence) to Linear + Notion for product and engineering tooling.
+**Evidence:** Atlassian MCP server too slow (60s delays, excessive token use); Linear offers better workflow fit.
+**Rationale:** Speed and integration quality — Linear + Notion aligns better with current team tooling and AI-assisted workflows.
+**Constraints this creates:**
+- Jira references in existing skills/docs should be updated to Linear over time
+- Atlassian MCP is legacy — do not invest further in it
+
+---
+
 _Add new decisions here as they are made. Format: heading with date, decision, evidence/rationale, constraints created._

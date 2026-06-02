@@ -10,7 +10,18 @@ Open questions are distinct from themes: a theme is a pattern we've observed; an
 
 ## Active questions
 
-_None yet. Questions will be added here as they emerge from source processing and meetings._
+### Can ElevenLabs extract structured responses (yes/no) from voice calls to drive conditional logic?
+**Priority:** High
+**Raised:** 2026-06-02
+**Source:** Standup — Paul blocked on this during platform exploration
+
+This is the critical technical blocker for the voice agent. Without it, the agent can't branch on fixer responses (confirm/decline/reschedule).
+
+**What we'd need to answer it:**
+- ElevenLabs docs / support on conditional actions
+- Paul's exploration findings this week
+
+**Linked roadmap item:** ElevenLabs voice agent
 
 ---
 
