@@ -14,6 +14,8 @@ Pushing AI-generated cost estimations on the web app as the primary conversion p
 ### Fixer WhatsApp Flows migration
 Moving fixer interactions (accept booking, attendance check, feedback/invoice submission) from SMS + simple web app to WhatsApp Flows. Goal: more reliable, app-like experience that reduces no-shows and friction.
 
+**WhatsApp admin relay** (Anthony) — relay between admin system and Front now built. Adds message history tracking, conversation detection, and auto follow-up. Read receipts and template integration in progress. Staging tomorrow (3 Jun), production after validation. Note: Anthony away after 6 Jun for 3 weeks.
+
 ### ElevenLabs voice agent
 Exploring an AI voice agent (via ElevenLabs) to handle outbound fixer confirmation calls. Currently in early exploration — Paul leading platform assessment. Blocker: unable to extract yes/no responses from calls; conditional action logic not yet resolved.
 
