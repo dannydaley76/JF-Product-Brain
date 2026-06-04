@@ -1,6 +1,6 @@
 # Initiatives
 
-_Last updated: 2026-06-04_
+_Last updated: 2026-06-04 (updated same day)_
 
 Initiatives represent strategic bets — the goals JustFix is working toward. Each initiative has one or more projects beneath it that deliver against the goal. This document is the strategic layer; see `roadmap.md` for what's actively in progress.
 
@@ -86,6 +86,15 @@ Replace the manual fixer payment process with self-billing — JustFix generates
 Identify like-for-like tool and infrastructure replacements that reduce our cost base without compromising capability. Current targets: payment processing (Stripe → Ryft) and CRM (HubSpot → Go High Level).
 
 **Projects:** Migrate payments to Ryft, Migrate to Go High Level, Migrate fixer repo and management from HubSpot to admin
+
+---
+
+### Run a self-managing ops floor
+JustFix's ops team currently monitors every active booking manually and discovers problems too late — usually after the customer is already affected. The goal is for the system to monitor every booking and appointment continuously, surface at-risk jobs before they become customer problems, and take automated first-response actions (contacting fixers, notifying customers, triggering emergency rematches) with human oversight on judgment calls until confidence is high enough to automate further.
+
+**Projects:** Booking monitoring agent, Fixer no-show response flow, Ops live booking health dashboard, Rematch booking with new dates
+
+**Success metric:** % of booking problems caught and acted on before the customer is affected — baseline: ~0% (all reactive today) → target TBC
 
 ---
 
