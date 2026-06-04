@@ -1,6 +1,6 @@
 # Roadmap
 
-_Last updated: 2026-06-02_
+_Last updated: 2026-06-03_
 
 This document tracks current and near-term product priorities across all surfaces. It should be updated as priorities shift. It is a working document, not a polished plan.
 
@@ -14,10 +14,12 @@ Pushing AI-generated cost estimations on the web app as the primary conversion p
 ### Fixer WhatsApp Flows migration
 Moving fixer interactions (accept booking, attendance check, feedback/invoice submission) from SMS + simple web app to WhatsApp Flows. Goal: more reliable, app-like experience that reduces no-shows and friction.
 
-**WhatsApp admin relay** (Anthony) — relay between admin system and Front now built. Adds message history tracking, conversation detection, and auto follow-up. Read receipts and template integration in progress. Staging tomorrow (3 Jun), production after validation. Note: Anthony away after 6 Jun for 3 weeks.
+**WhatsApp admin relay** (Anthony) — relay app between Twilio and Front now built. Contact relay through admin working; template sending added; 24-hour window auto-checking implemented; problem reports now generate replies (not comments). Staging deploy pending final checks as of 4 Jun. Admin team to be notified about new relay channel; phone numbers (Twilio + Meta) still need documenting in Notion. Anthony away from 6 Jun for 3 weeks.
+
+**Discount codes** — admin backend ready for production. Deploying admin features only; frontend and mobile on hold until QA complete (in progress 4 Jun afternoon).
 
 ### ElevenLabs voice agent
-Exploring an AI voice agent (via ElevenLabs) to handle outbound fixer confirmation calls. Currently in early exploration — Paul leading platform assessment. Blocker: unable to extract yes/no responses from calls; conditional action logic not yet resolved.
+Exploring an AI voice agent (via ElevenLabs) to handle outbound fixer confirmation calls. ElevenLabs integration now mostly complete with the questions framework established — MVP nearly ready for testing. Next: call triggering and information passing once the MVP is complete. Open risks: voices tested so far sound "too human" (uncanny valley) — voice selection still open; yes/no response extraction / conditional action logic not yet resolved.
 
 ---
 

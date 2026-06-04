@@ -25,6 +25,21 @@ This is the critical technical blocker for the voice agent. Without it, the agen
 
 ---
 
+### Will fixers accept an AI voice agent for confirmation calls, or is a manual fallback needed long-term?
+**Priority:** Medium
+**Raised:** 2026-06-03
+**Source:** "voice agent update and standup" — tested voices sound "too human"/uncanny; team noted adoption will take time, especially with builders, and manual option remains available
+
+This affects how much we invest in the voice agent vs. keeping/maintaining manual confirmation paths.
+
+**What we'd need to answer it:**
+- Fixer reactions to a live MVP call
+- Adoption / opt-out rates once deployed
+
+**Linked roadmap item:** ElevenLabs voice agent
+
+---
+
 ## Question format
 
 ```
