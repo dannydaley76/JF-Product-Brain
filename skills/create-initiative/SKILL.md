@@ -80,11 +80,15 @@ Present your suggestions to the user: *"These existing projects look like they b
 
 ---
 
-## Step 6: Suggest new projects
+## Step 6: Suggest new projects and wait for input
 
 Based on the initiative goal and what the user has said, suggest 1–3 new projects that don't exist yet but would logically sit under this initiative. A project is a bounded piece of work with a clear deliverable — not a vague area.
 
-For each suggestion, give a project name and one sentence on what it covers. These are suggestions, not commitments — the user can take, modify, or ignore them.
+For each suggestion, give a project name and one sentence on what it covers.
+
+Then **stop and ask**: *"Do these feel right? Anything you'd add, rename, or drop before I pull this all together?"*
+
+Wait for the user's response before proceeding. They may rename projects, reject some, or add new ones. Incorporate their feedback before moving to Step 7.
 
 ---
 
