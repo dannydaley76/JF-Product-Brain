@@ -14,7 +14,7 @@ Pushing AI-generated cost estimations on the web app as the primary conversion p
 ### Fixer WhatsApp Flows migration
 Moving fixer interactions (accept booking, attendance check, feedback/invoice submission) from SMS + simple web app to WhatsApp Flows. Goal: more reliable, app-like experience that reduces no-shows and friction.
 
-**WhatsApp admin relay** (Anthony) — relay app between Twilio and Front now built. Contact relay through admin working; template sending added; 24-hour window auto-checking implemented; problem reports now generate replies (not comments). Staging deploy pending final checks as of 4 Jun. Admin team to be notified about new relay channel; phone numbers (Twilio + Meta) still need documenting in Notion. Anthony away from 6 Jun for 3 weeks.
+**WhatsApp admin relay** (Anthony) — relay app between Twilio and Front now built. Contact relay through admin working; template sending added; 24-hour window auto-checking implemented; problem reports now generate replies (not comments). Deployed to staging 5 Jun; inactive until QA passes. Full production deploy planned for Monday 8 Jun. Admin team to be notified about new relay channel; phone numbers (Twilio + Meta) still need documenting in Notion. Anthony away from 6 Jun for 3 weeks.
 
 **Discount codes** — admin backend ready for production. Deploying admin features only; frontend and mobile on hold until QA complete (in progress 4 Jun afternoon).
 
@@ -24,6 +24,9 @@ Exploring an AI voice agent (via ElevenLabs) to handle outbound fixer confirmati
 ---
 
 ## Near term
+
+### Big Jobs MCP server — boiler estimator
+AI-powered estimation for bigger jobs (boiler services, fixes, installs). Approach: decision tree (not fully conversational), replicating the iHeat/BuildTrade estimation model. Prototype expected ~2 weeks after kickoff.
 
 ### Claude app — discovery
 The Claude app is not yet in discovery. It should provide the same AI estimation experience as the ChatGPT app and web app. Discovery should identify what Claude-specific capabilities can add unique value beyond estimation.

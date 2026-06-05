@@ -49,6 +49,16 @@ This document exists to prevent good decisions from being relitigated and bad on
 
 ---
 
+### Big Jobs: decision tree approach for boiler estimator MCP server
+**Decision:** Use a decision tree (not a fully conversational AI) as the initial approach for the Big Jobs MCP server, replicating the iHeat/BuildTrade estimation model.
+**Evidence:** Discussed in Roadmap catchup, 4 Jun 2026. Decision tree seen as faster to prototype and easier to control than open-ended conversation.
+**Rationale:** Gets a working boiler estimator to prototype stage faster; can evolve toward conversational later once the core model is validated.
+**Constraints this creates:**
+- Initial MCP server should not attempt free-form conversation — structured decision tree only
+- Design should accommodate future evolution toward more conversational flows
+
+---
+
 ### Ship to production behind toggles to avoid long-lived branches
 **Decision:** Push code to production ASAP — even when not actively used — gated behind an admin toggle.
 **Rationale:** Avoids long-lived branches and merge conflicts.

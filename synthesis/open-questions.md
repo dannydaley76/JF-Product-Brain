@@ -40,6 +40,21 @@ This affects how much we invest in the voice agent vs. keeping/maintaining manua
 
 ---
 
+### Which payment finance provider best fits our job value range?
+**Priority:** Medium
+**Raised:** 2026-06-04
+**Source:** Roadmap catchup — PayPal Pay in 3 under consideration but £3k cap is problematic
+
+PayPal Pay in 3 handles debt collection and charges 2.9%, but its £3k limit sits below typical boiler job values. Novuna and Duologi were mentioned as alternatives. We need to understand which provider(s) cover our job value range without unacceptable fees or friction.
+
+**What we'd need to answer it:**
+- Pricing, limits, and integration complexity for Novuna and Duologi vs. PayPal Pay in 3
+- Distribution of job values in the £500–£5k range to size the opportunity
+
+**Linked roadmap item:** Big Jobs MCP server — boiler estimator
+
+---
+
 ## Question format
 
 ```
